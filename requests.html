@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Requests</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #1b103b; /* Light cyan background */
+            color: #333;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 90%;
+            width: 800px;
+            margin: 40px auto;
+            padding: 30px;
+            background-color: white; /* White background for container */
+            border-radius: 15px; /* Rounded corners */
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow */
+        }
+
+        h1 {
+            margin-bottom: 30px;
+            color: #00796b; /* Darker teal color */
+            font-size: 28px; /* Larger font size */
+            font-weight: bold; /* Bold font */
+        }
+
+        .action {
+            display: inline-block;
+            width: calc(30% - 20px); /* Three items per row with margin */
+            height: 120px; /* Smaller height */
+            margin: 10px; /* Space between action buttons */
+            padding: 15px; /* Less padding for smaller boxes */
+            background: linear-gradient(135deg, #66bb6a, #43a047); /* Gradient background */
+            color: white;
+            border-radius: 15px; /* Rounded corners */
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: background 0.3s, transform 0.3s;
+            cursor: pointer;
+            position: relative; /* Position for pseudo-element */
+            overflow: hidden; /* Hide overflow for pseudo-element */
+            line-height: 120px; /* Center text vertically */
+        }
+
+        .action:hover {
+            transform: translateY(-5px); /* Lift effect on hover */
+        }
+
+        .action::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(255, 255, 255, 0.2); /* White overlay */
+            opacity: 0; /* Start hidden */
+            transition: opacity 0.3s; /* Smooth transition */
+        }
+
+        .action:hover::after {
+            opacity: 1; /* Show overlay on hover */
+        }
+
+        @media (max-width: 768px) {
+            .action {
+                width: calc(100% - 20px); /* Full width on smaller screens */
+                line-height: normal; /* Reset line height */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Choose an Action</h1>
+        <div class="action" onclick="window.location.href='digital-banner.html'">Ads on Digital Banner</div>
+        <div class="action" onclick="window.location.href='qr-code.html'">QR Code Ads</div>
+        <div class="action" onclick="window.location.href='other-request.html'">Report a Problem</div>
+        <div class="action" onclick="window.location.href='view-status.html'">View Status</div>
+        <div class="action" onclick="window.location.href='your-info.html'">Your Info</div>
+        <div class="action" onclick="window.location.href='another-action.html'">Another Action</div> <!-- Added an extra action for the third row -->
+    </div>
+</body>
+</html>

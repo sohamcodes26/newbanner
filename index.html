@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banner Mukt City</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #1b103b;
+            color: white;
+            position: relative;
+            /* Added to position the background */
+            overflow: hidden;
+            /* Prevent scrollbars from appearing */
+        }
+
+        /* Add this class for the background logo */
+        .background-logo {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('./WhatsApp Image 2024-09-29 at 11.08.14_30d922e1.jpg');
+            /* Adjust the path as needed */
+            background-size: cover;
+            /* This ensures the image covers the entire area */
+            background-position: center;
+            /* Centers the background image */
+            background-repeat: no-repeat;
+            opacity: 0.1;
+            /* Adjust opacity as needed */
+            z-index: -1;
+            /* Send to back */
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #1b103b;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            width: 50px;
+            /* Adjust size as needed */
+            margin-right: 10px;
+        }
+
+        .logo h1 {
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+        }
+
+        nav {
+            background-color: #333;
+            /* Darker shade for the navbar */
+            padding: 10px;
+            border-radius: 25px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            color: #ff5033;
+        }
+
+        .user-icons {
+            display: flex;
+            align-items: center;
+        }
+
+        .user-icons a {
+            color: white;
+            margin: 0 10px;
+        }
+
+        .user-icons a:hover {
+            color: #ff5033;
+        }
+
+        .auth-buttons {
+            display: flex;
+            align-items: center;
+        }
+
+        .auth-buttons button {
+            margin-left: 10px;
+            background-color: #ff5033;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            font-size: 14px;
+            border-radius: 25px;
+            cursor: pointer;
+        }
+
+        .auth-buttons button:hover {
+            background-color: #ff7043;
+        }
+
+        .banner {
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .banner h2 {
+            font-size: 36px;
+            color: white;
+            text-shadow: 0 0 1px #ffd700, 0 0 1px #ffd700, 0 0 15px #ffd700;
+        }
+
+        .banner p {
+            font-size: 18px;
+            margin-top: 20px;
+            max-width: 800px;
+            line-height: 1.5;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .gallery {
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .gallery-item {
+            margin: 0 10px;
+        }
+
+        .gallery-item img {
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .chat-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #ff5033;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 50px;
+            cursor: pointer;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .chat-btn:hover {
+            background-color: #ff7043;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="background-logo"></div> <!-- Background logo -->
+
+    <header>
+        <div class="logo">
+            <img src="./WhatsApp Image 2024-09-29 at 11.08.14_30d922e1.jpg" alt="Logo"> <!-- Updated logo image path -->
+            <h1>Go Digital</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="feedback.html" target="_blank">Feedback</a></li>
+                <li><a href="#">More</a></li>
+            </ul>
+        </nav>
+
+        <div class="user-icons">
+            <a href="#"><i class="fas fa-shopping-bag"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <div class="auth-buttons">
+                <button onclick="window.location.href='login.html'">Sign In</button>
+                <button onclick="window.location.href='signup.html'">Sign Up</button>
+            </div>
+        </div>
+    </header>
+
+    <section class="banner">
+        <h2>OUR LATEST DIGITAL BANNER IDEAS & INNOVATIONS</h2>
+        <p>Get ready to make a statement with our high-quality digital banners. Whether it's for a trade show, outdoor
+            event, or special promotion, our banners are designed to create an impact without harming the environment.
+            Our motive is to lead the transformation toward a city free from plastic banners by embracing digital
+            alternatives that offer greater flexibility and sustainability.
+
+            With our innovative digital banners, you can display multiple ads, incorporate dynamic content like QR code
+            ads, and engage your audience in ways traditional banners cannot. Let’s work together to create a cleaner,
+            smarter, and more connected city.</p>
+    </section>
+
+    <section class="gallery">
+        <div class="gallery-item">
+            <img src="img1.jpg" alt="Banner 1">
+        </div>
+        <div class="gallery-item">
+            <img src="img2.jpg" alt="Banner 2">
+        </div>
+        <div class="gallery-item">
+            <img src="img3.jpg" alt="Banner 3">
+        </div>
+    </section>
+
+    <button class="chat-btn" onclick="redirectToTelegram()">Let's Chat!</button>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script>
+        function redirectToTelegram() {
+            window.location.href = 'https://t.me/+zgtfxmqR1qxjM2Fl';
+        }
+    </script>
+</body>
+
+</html>
